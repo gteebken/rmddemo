@@ -1,0 +1,31 @@
+---
+title: "RMD Demo"
+author: "gmteebken"
+date: "5/4/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r include = FALSE}
+library("knitr")
+
+source("analysis.R")
+```
+
+### Demo in RMD
+
+According to blah blah, the most ind. country was `r max_country`.
+
+
+```{r, echo = FALSE}
+kable(idv_summary_df)
+```
+
+### Table of sorted countries
+
+``` {r, echo = FALSE}
+kable(idv_data_df)
+```
